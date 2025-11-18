@@ -21,4 +21,5 @@ it contains a 4 pins
 7. means  speed * (10^2)/(10^6) = speed * (10^-4)
 8. FINALLY , ```Distance  = 0.0340 * duration```
 
-
+# For more explanation Follow this link
+https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/
