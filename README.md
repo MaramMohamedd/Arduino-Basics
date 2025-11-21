@@ -74,6 +74,7 @@ delay(2000); // means turn on the led for 2 seconds then go to the next command 
 ```
 ### Tinker example 
 https://www.tinkercad.com/things/fsgDCvlROLu/editel?returnTo=%2Fdashboard%2Fdesigns%2Fall&sharecode=mkY8ZeWEmpBkE5SJPmASi7C48AwFpXEG-0Puop6m-PU
+
 try it yourself try to comment the delay function and see the difference 
 
 ### when to remove it ?
@@ -115,9 +116,9 @@ analogWrite(3, 0);    // Off (0%)
 analogWrite(3, 64);   // 25% brightness
 ```
 used for : 
-. LED brightness control
-. Motor speed control
-. Speaker tones (with passive buzzer)
+1. LED brightness control
+2. Motor speed control
+3. Speaker tones (with passive buzzer)
 
 
 # analogRead();
@@ -134,9 +135,9 @@ Serial.println(sensorValue);  // will be 0-1023
 float voltage = sensorValue * (5.0 / 1023.0);
 ```
 used for :
-. Potentiometers (knobs)
-. Light sensors, temperature sensors
-. Any sensor with varying voltage
+1. Potentiometers (knobs)
+2. Light sensors, temperature sensors
+3. Any sensor with varying voltage
 
 
 
