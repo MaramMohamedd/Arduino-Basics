@@ -1,4 +1,4 @@
-# There are several ways for connecting the led with the aruino and bread board 
+# There are several ways for connecting the led with the arduino and the bread board 
 ## 1- First method
 1. Led anode(+) longest leg -> pin 
 2. Led cathod(-) -> resistor 
