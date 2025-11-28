@@ -6,7 +6,7 @@ used for intialization , ex) intializing the job of each pin (INPUT , OUTPUT..et
 runs only once when the Arduino starts or is reset .
 
 ### ex)pinMode(number , OUTPUT)
-```
+```bash
 int ledpin = 2;
 void setup () {
 pinMode(ledpin , OUTPUT) ; //means iam telling the Arduino that pin 2 -> ledpin and its job (output) means in the loop you will give an order to the led (high = turn on , low = turn of)
@@ -14,7 +14,7 @@ pinMode(ledpin , OUTPUT) ; //means iam telling the Arduino that pin 2 -> ledpin 
 ```
 
 ### ex) pinMode(number , INPUT)
-```
+``` bash
 ultrasonic_sensor_echo_pin = 9;
 void setup () {
 pinMode(ledpin , INPUT) ;//means iam telling the Arduino that pin 9 -> echo pin and its job (INPUT) means receives the signal this pin takes an input and returns the duration through pulseIn() 
@@ -24,12 +24,12 @@ pinMode(ledpin , INPUT) ;//means iam telling the Arduino that pin 9 -> echo pin 
 # Serial Monitor
 it is like the terminal in VS code , it starts communication between Arduino and your computer
 ### Most common usage 
-```
+```bash
 Serial.begin(9600);
 Serial.println(""); //Send message to computer with new line 
 Serial.print("");//Send message to computer witout a new line
 ```
-```
+```bash
 void setup() {
 Serial.begin(9600); //9600 is the speed of the communication
 Serial.println("HELLO FROM SETUP FUNCTION");
@@ -42,7 +42,7 @@ infinite loop runs forever without stopping it has the logic , conditions , orde
 ### digitalWrite();
 it is used for DIGITAL OUTPUTS means turn on , turn off 
 ex) turn on , off ->  the led , buzzer , trig pin to send a signal 
-```
+``` bash
 void loop()
 {
 digitalWrtie(LED_PIN , HIGH); // means turn on the led 
@@ -65,7 +65,7 @@ we didn't specify how long each command should execute. The OFF command happens 
 , so delay(1000); means make the command lasts for 1 sec then go to the next one
 
 ex) 
-```
+``` bash
 digitalWrite(led_pin , HIGH);
 delay(3000); // means turn on the led for 3 seconds then go to the next command
 digitalWrite(led_pin , LOW);
@@ -82,7 +82,7 @@ when you need immediate response to changing conditions.
 means if i want somehting to be excuted as long as another something happens , (i don't know for how long this action will last)
 
 ex) make the led on whenever the manual mode is on 
-```
+```bash
 if (manual_mode == true){
 digitalWrite(led_pin , HIGH);
 }
@@ -94,7 +94,7 @@ digitalWrite(led_pin , LOW);
 # digitalRead();
 it reads if a digital pin is HIGH or LOW , like you're taking an input from the user , environment ...etc
 ex) a pushbotton reading the state is on or off ?
-```
+```bash
 int buttonState = digitalRead(3);  // read pin 3
 if (digitalRead(3) == HIGH) {
   Serial.println("Button is pressed!");
@@ -105,11 +105,11 @@ if (digitalRead(3) == HIGH) {
 
 # analogWrite();
 creates PWM (Pulse Width Modulation) to simulate analog output 
-```
+``` bash
 analogWrite(pin, value);  // value: 0-255
 ```
 ex) 
-```
+```bash
 analogWrite(3, 255);  // Full brightness/speed (100%)
 analogWrite(3, 127);  // Half brightness/speed (50%)
 analogWrite(3, 0);    // Off (0%)
@@ -125,7 +125,7 @@ used for :
 used for reading voltage from analog pins (0-5V) and returns 0-1023
 
 ex) 
-```
+```bash
 int sensorValue = analogRead(A0);  // read analog pin A0
 
 Serial.print("Sensor value: ");
